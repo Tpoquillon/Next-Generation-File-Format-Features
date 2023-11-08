@@ -23,13 +23,13 @@ Table of content
     + [Multi-scale Features](#multi-scale-features)
     + [Other Features](#other-features)
   * [[FeatureExtraction](https://github.com/ProfBressan/FeatureExtraction)]
-    + [**BIC (Border/Interior Pixel Classification)** 128 features](#--bic--border-interior-pixel-classification----128-features)
-    + [**TAS (Threshold Adjacency Statistics)** 162 features](#--tas--threshold-adjacency-statistics----162-features)
-    + [**LBP (Local Binary Part)** 352 features](#--lbp--local-binary-part----352-features)
-    + [**FOM (First Order Measures)** 8 features (gray) | 24 features (color)](#--fom--first-order-measures----8-features--gray----24-features--color-)
-    + [**Zernike** 72 features](#--zernike---72-features)
-    + [**Haralick** 13 features](#--haralick---13-features)
-    + [**GCH (Global Color Histogram)** 30 features](#--gch--global-color-histogram----30-features)
+    + [BIC (Border/Interior Pixel Classification) 128 features](#--bic--border-interior-pixel-classification----128-features)
+    + [TAS (Threshold Adjacency Statistics) 162 features](#--tas--threshold-adjacency-statistics----162-features)
+    + [LBP (Local Binary Part) 352 features](#--lbp--local-binary-part----352-features)
+    + [FOM (First Order Measures) 8 features (gray) | 24 features (color)](#--fom--first-order-measures----8-features--gray----24-features--color-)
+    + [Zernike 72 features](#--zernike---72-features)
+    + [Haralick 13 features](#--haralick---13-features)
+    + [GCH (Global Color Histogram) 30 features](#--gch--global-color-histogram----30-features)
   * [[Mahotas](https://mahotas.readthedocs.io/en/latest/features.html)]
     + [SURF](#surf)
     + [Zernike](#zernike)
@@ -651,19 +651,19 @@ Histogram of Oriented Gradients (HOG)
 ```
 ### [FeatureExtraction](https://github.com/ProfBressan/FeatureExtraction)
 
-#### **BIC (Border/Interior Pixel Classification)** 128 features
+#### BIC (Border/Interior Pixel Classification) 128 features
 
-#### **TAS (Threshold Adjacency Statistics)** 162 features
+#### TAS (Threshold Adjacency Statistics) 162 features
 
-#### **LBP (Local Binary Part)** 352 features
+#### LBP (Local Binary Part) 352 features
 
-#### **FOM (First Order Measures)** 8 features (gray) | 24 features (color)
+#### FOM (First Order Measures) 8 features (gray) | 24 features (color)
 
-#### **Zernike** 72 features
+#### Zernike 72 features
 
-#### **Haralick** 13 features
+#### Haralick 13 features
 
-#### **GCH (Global Color Histogram)** 30 features
+#### GCH (Global Color Histogram) 30 features
 
 ### [Mahotas](https://mahotas.readthedocs.io/en/latest/features.html)
 
@@ -710,102 +710,102 @@ Texture: this might be an important feature if the objects in the image have a s
 ```
 #### Standard Object Features
 ```
-**Bounding Box Maximum**
+Bounding Box Maximum
 The coordinates of the upper right corner of the object's bounding box. The first axis is x, then y, then z (if available).
-**Bounding Box Minimum**
+Bounding Box Minimum
 The coordinates of the lower left corner of the object's bounding box. The first axis is x, then y, then z (if available).
-**Size in pixels**
+Size in pixels
 Total size of the object in pixels. No correction for anisotropic resolution or anything else.
-**Covariance of Channel Intensity**
+Covariance of Channel Intensity
 For multi-channel images this feature computes the covariance between the channels inside the object.
-**Covariance of Channel Intensity in neighborhood**
+Covariance of Channel Intensity in neighborhood
 For multi-channel images this feature computes the covariance between the channels in the object neighborhood. The size of the neighborhood is determined from the controls in the lower part of the dialogue.
-**Histogram of Intensity**
+Histogram of Intensity
 Histogram of the intensity distribution inside the object. The histogram has 64 bins and its range is computed from the global minimum and maximum intensity values in the whole image.
-**Histogram of Intensity in neighborhood**
+Histogram of Intensity in neighborhood
 Histogram of the intensity distribution in the object neighborhood. The histogram has 64 bins and its range is computed from the global minimum and maximum intensity values in the whole image. The size of the neighborhood is determined from the controls in the lower part of the dialogue.
-**Kurtosis of Intensity**
+Kurtosis of Intensity
 Kurtosis of the intensity distribution inside the object, also known as the fourth standardized moment. This feature measures the heaviness of the tails for the distribution of intensity over the object's pixels. For multi-channel data, this feature is computed channel-wise.
-**Kurtosis of Intensity in neighborhood**
+Kurtosis of Intensity in neighborhood
 Kurtosis of the intensity distribution in the object neighborhood, also known as the fourth standardized moment. This feature measures the heaviness of the tails for the distribution of intensity over the object's pixels. For multi-channel data, this feature is computed channel-wise. The size of the neighborhood is determined from the controls in the lower part of the dialogue.
-**Maximum intensity**
+Maximum intensity
 Maximum intensity value inside the object. For multi-channel data, this feature is computed channel-wise.
-**Maximum intensity in neighborhood**
+Maximum intensity in neighborhood
 Maximum intensity value in the object neighborhood. For multi-channel data, this feature is computed channel-wise. The size of the neighborhood is determined from the controls in the lower part of the dialogue.
-**Mean Intensity**
+Mean Intensity
 Mean intensity inside the object. For multi-channel data, this feature is computed channel-wise.
-**Mean Intensity in neighborhood**
+Mean Intensity in neighborhood
 Mean intensity in the object neighborhood. For multi-channel data, this feature is computed channel-wise. The size of the neighborhood is determined from the controls in the lower part of the dialogue.
-**Minimum intensity**
+Minimum intensity
 Minimum intensity value inside the object. For multi-channel data, this feature is computed channel-wise.
-**Minimum intensity in neighborhood**
+Minimum intensity in neighborhood
 Minimum intensity value in the object neighborhood. For multi-channel data, this feature is computed channel-wise. The size of the neighborhood is determined from the controls in the lower part of the dialogue.
-**PrincipalAxes**
+PrincipalAxes
 PrincipalAxes, stay tuned for more details
-**Quantiles of Intensity**
+Quantiles of Intensity
 Quantiles of the intensity distribution inside the object, in the following order: 0%, 10%, 25%, 50%, 75%, 90%, 100%.
-**Principal components of the object**
+Principal components of the object
 Eigenvectors of the PCA on the coordinates of the object's pixels. Very roughly, this corresponds to the axes of an ellipse fit to the object. The axes are ordered starting from the one with the largest eigenvalue.
-**Center of the object**
+Center of the object
 Average of the coordinates of this object's pixels.
-**Radii of the object**
+Radii of the object
 Eigenvalues of the PCA on the coordinates of the object's pixels. Very roughly, this corresponds to the radii of an ellipse fit to the object. The radii are ordered, with the largest value as first.
-**Skewness of Intensity**
+Skewness of Intensity
 Skewness of the intensity distribution inside the object, also known as the third standardized moment. This feature measures the asymmetry of the intensity distribution inside the object. For multi-channel data, this feature is computed channel-wise.
-**Skewness of Intensity in neighborhood**
+Skewness of Intensity in neighborhood
 Skewness of the intensity distribution in the object neighborhood, also known as the third standardized moment. This feature measures the asymmetry of the intensity distribution in the object neighborhood. For multi-channel data, this feature is computed channel-wise. The size of the neighborhood is determined from the controls in the lower part of the dialogue.
-**Total Intensity**
+Total Intensity
 Sum of intensity values for all the pixels inside the object. For multi-channel images, computed channel-wise.
-**Total Intensity in neighborhood**
+Total Intensity in neighborhood
 Sum of intensity values for all the pixels in the object neighborhood. For multi-channel images, computed channel-wise. The size of the neighborhood is determined from the controls in the lower part of the dialogue.
-**Variance of Intensity**
+Variance of Intensity
 Variance of the intensity distribution inside the object. For multi-channel data, this feature is computed channel-wise.
-**Variance of Intensity in neighborhood**
+Variance of Intensity in neighborhood
 Variance of the intensity distribution in the object neighborhood. For multi-channel data, this feature is computed channel-wise. The size of the neighborhood is determined from the controls in the lower part of the dialogue.
 ```
 #### Convex Hull Features
 ```
-**Convexity**
+Convexity
 The ratio between the areas of the object and its convex hull (\<= 1)
-**Defect Center**
+Defect Center
 Combined centroid of convexity defects, which are defined as areas of the convex hull, not covered by the original object.
-**Number of Defects**
+Number of Defects
 Total number of defects, i.e. number of connected components in the area of the convex hull, not covered by the original object
-**Mean Defect Displacement**
+Mean Defect Displacement
 Mean distance between the centroids of the original object and the centroids of the defects, weighted by defect area.
-**Kurtosis of Defect Area**
+Kurtosis of Defect Area
 Kurtosis (4th standardized moment, measure of tails' heaviness) of the distribution of the areas of convexity defects. Defects are defined as connected components in the area of the convex hull, not covered by the original object.
-**Mean Defect Area**
+Mean Defect Area
 Average of the areas of convexity defects. Defects are defined as connected components in the area of the convex hull, not covered by the original object.
-**Skewness of Defect Area**
+Skewness of Defect Area
 Skewness (3rd standardized moment, measure of asymmetry) of the distribution of the areas of convexity defects. Defects are defined as connected components in the area of the convex hull, not covered by the original object.
-**Variance of Defect Area**
+Variance of Defect Area
 Variance of the distribution of areas of convexity defects. Defects are defined as connected components in the area of the convex hull, not covered by the original object.
-**Convex Hull Center**
+Convex Hull Center
 Centroid of the convex hull of this object. The axes order is x, y, z
-**Convex Hull Area**
+Convex Hull Area
 Area of the convex hull of this object
-**Object Center**
+Object Center
 Centroid of this object. The axes order is x, y, z
-**Object Area**
+Object Area
 Area of this object, computed from the interpixel contour (can be slightly larger than simple size of the object in pixels). This feature is used to compute convexity.
 ```
 
 #### Skeleton Features
 ```
-**Average Branch Length**
+Average Branch Length
 Average length of a branch in the skeleton
-**Number of Branches**
+Number of Branches
 Total number of branches in the skeleton of this object.
-**Diameter**
+Diameter
 The longest path between two endpoints on the skeleton.
-**Euclidean Diameter**
+Euclidean Diameter
 The Euclidean distance between the endpoints (terminals) of the longest path on the skeleton
-**Number of Holes**
+Number of Holes
 The number of cycles in the skeleton (i.e. the number of cavities in the region)
-**Center of the Skeleton**
+Center of the Skeleton
 The coordinates of the midpoint on the longest path between the endpoints of the skeleton.
-**Length of the Skeleton**
+Length of the Skeleton
 Total length of the skeleton in pixels
 ```
 
