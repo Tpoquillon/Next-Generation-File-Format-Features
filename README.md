@@ -27,7 +27,10 @@ These issues are curently discussed in:
 - https://github.com/Tpoquillon/Next-Generation-File-Format-Features/pull/1 a proposal for a multilevel object uscase
 
 
+## Feature Atlas
+*Many different bioimaging pipeline implement feature measurement, we observe that there is  both a strong redundancy between those, with the same features being re-implemented and  a need to implement more, a challenge to categorize those features and a  need for new meaningful feature descriptor*
 
+[A compilation of different feature library from @ebouilho](Feature_libraries.md)
 
 
 ## Related works
