@@ -17,3 +17,19 @@ Key objectives:
 Related works:
 
 * Table n-data storage format for OME-NGFF  https://github.com/ome/ngff/pull/64 
+
+
+
+
+
+## Multi-Object Feature Relationship Managment
+
+*Biological images frequently encompass various object types and sizes, 
+(such as organoids, cell mitochondria, and p-bodies). The process of 
+quantifying these objects and deriving relevant features from them also 
+encompasses the extraction of descriptors that characterize their 
+interactions. This gives rise to challenges in managing the features of 
+multiple objects, elucidating, quantifying, and storing their 
+interrelationships.*
+
+
