@@ -21,9 +21,10 @@ encompasses the extraction of descriptors that characterize their
 interactions. This gives rise to challenges in managing the features of 
 multiple objects, elucidating, quantifying, and storing their 
 interrelationships.*
-These issues are curently discussed in 
-- https://github.com/Tpoquillon/Next-Generation-File-Format-Features/pull/2
-- https://github.com/Tpoquillon/Next-Generation-File-Format-Features/pull/1
+
+These issues are curently discussed in:
+- https://github.com/Tpoquillon/Next-Generation-File-Format-Features/pull/2 a proposal for staring features in  tracking data
+- https://github.com/Tpoquillon/Next-Generation-File-Format-Features/pull/1 a proposal for a multilevel object uscase
 
 
 
