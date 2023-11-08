@@ -1,4 +1,80 @@
 
+- [Basic features](#basic-features)
+  * [[Pyradiomics](https://pyradiomics.readthedocs.io/en/latest/features.html)]
+    + [First Order Statistics (19 features)](#first-order-statistics--19-features-)
+    + [Shape-based (2D, 3D) (26 features)](#shape-based--2d--3d---26-features-)
+    + [Gray Level Co-occurrence Matrix (24 features)](#gray-level-co-occurrence-matrix--24-features-)
+    + [Gray Level Run Length Matrix (16 features)](#gray-level-run-length-matrix--16-features-)
+    + [Gray Level Size Zone Matrix (16 features)](#gray-level-size-zone-matrix--16-features-)
+    + [Neighbouring Gray Tone Difference Matrix (5 features)](#neighbouring-gray-tone-difference-matrix--5-features-)
+    + [Gray Level Dependence Matrix (16 features)](#gray-level-dependence-matrix--16-features-)
+  * [[Nyxus](https://github.com/PolusAI/nyxus)]
+    + [Pixel intensity features](#pixel-intensity-features)
+    + [Morphology features](#morphology-features)
+    + [Texture features](#texture-features)
+    + [Radial intensity distribution features](#radial-intensity-distribution-features)
+    + [Frequency and orientational features](#frequency-and-orientational-features)
+    + [2D image moments](#2d-image-moments)
+    + [Neighbor features](#neighbor-features)
+  * [[Pyfeats](https://github.com/giakou4/pyfeats)]
+    + [Textural Features](#textural-features)
+    + [Morphological Features](#morphological-features)
+    + [Histogram Based Features](#histogram-based-features)
+    + [Multi-scale Features](#multi-scale-features)
+    + [Other Features](#other-features)
+  * [[FeatureExtraction](https://github.com/ProfBressan/FeatureExtraction)]
+    + [**BIC (Border/Interior Pixel Classification)** 128 features](#--bic--border-interior-pixel-classification----128-features)
+    + [**TAS (Threshold Adjacency Statistics)** 162 features](#--tas--threshold-adjacency-statistics----162-features)
+    + [**LBP (Local Binary Part)** 352 features](#--lbp--local-binary-part----352-features)
+    + [**FOM (First Order Measures)** 8 features (gray) | 24 features (color)](#--fom--first-order-measures----8-features--gray----24-features--color-)
+    + [**Zernike** 72 features](#--zernike---72-features)
+    + [**Haralick** 13 features](#--haralick---13-features)
+    + [**GCH (Global Color Histogram)** 30 features](#--gch--global-color-histogram----30-features)
+  * [[Mahotas](https://mahotas.readthedocs.io/en/latest/features.html)]
+    + [SURF](#surf)
+    + [Zernike](#zernike)
+    + [Haralick](#haralick)
+    + [LBP](#lbp)
+  * [[scMultiplex](https://github.com/fmi-basel/gliberal-scMultipleX/tree/main)]
+    + [Standard Pixel Features](#standard-pixel-features)
+    + [Standard Object Features](#standard-object-features)
+    + [Convex Hull Features](#convex-hull-features)
+    + [Skeleton Features](#skeleton-features)
+  * [[Scikit-image](https://scikit-image.org/docs/dev/api/skimage.feature.html)]
+    + [Features](#features)
+    + [Filters](#filters)
+  * [[Xrayimage](https://github.com/vatsalsaglani/xrayimage_extractfeatures/tree/master)]
+    + [Entropy features](#entropy-features)
+    + [GLCM Features](#glcm-features)
+    + [Moments](#moments)
+    + [Region Properties](#region-properties)
+- [Spatial Features](#spatial-features)
+  * [[SquidPy](https://squidpy.readthedocs.io/en/stable/)]
+    + [Graph features](#graph-features)
+    + [Image features](#image-features)
+    + [Spatial plots](#spatial-plots)
+  * [[DypFISH](https://github.com/cbib/dypfish)]
+    + [Spatial features](#spatial-features)
+  * [[Giotto](https://giottosuite.readthedocs.io/en/master/documentation.html#cell-neighborhood)]
+    + [Cell neighborhood](#cell-neighborhood)
+    + [Cell cell](#cell-cell)
+    + [Cell cell communication](#cell-cell-communication)
+  * [[Big-FISH](https://big-fish.readthedocs.io/en/stable/classification/features.html)]
+  * [[IMCDataAnalysis (R)](https://bodenmillergroup.github.io/IMCDataAnalysis/performing-spatial-analysis.html)]
+    + [Spatial interaction graphs](#spatial-interaction-graphs)
+    + [Spatial community analysis](#spatial-community-analysis)
+    + [Cellular neighborhood analysis](#cellular-neighborhood-analysis)
+    + [Spatial context analysis](#spatial-context-analysis)
+    + [Patch detection](#patch-detection)
+    + [Interaction analysis](#interaction-analysis)
+  * [[SpatialEpiApp (R)](https://github.com/Paula-Moraga/SpatialEpiApp)]
+    + [Areal](#areal)
+    + [Geostatistical features](#geostatistical-features)
+    + [Spatial point patterns](#spatial-point-patterns)
+- [Graph features](#graph-features-1)
+  * [[NetworkX](https://networkx.org/documentation/stable/index.html)]
+- [Other resources](#other-resources)
+
 ## Basic features
 ### [Pyradiomics](https://pyradiomics.readthedocs.io/en/latest/features.html)
 
