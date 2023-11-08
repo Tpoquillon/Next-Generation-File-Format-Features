@@ -30,8 +30,6 @@ interrelationships.*
 
 ## Related works
 
-- Table n-data storage format for OME-NGFF https://github.com/ome/ngff/pull/64
-
 - Nyxus Features https://github.com/PolusAI/nyxus/blob/main/docs/source/featurelist.rst
 
 - scMultipleX https://github.com/fmi-basel/gliberal-scMultipleX/blob/main/src/scmultiplex/features/FeatureFunctions.py
