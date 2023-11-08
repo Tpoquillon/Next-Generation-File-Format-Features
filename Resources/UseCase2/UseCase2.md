@@ -1,6 +1,6 @@
 <h1>Use Case 2: Timelapse Features</h1>
 
-An object of any class can be tracked over time.  
+An object of any class can be tracked over time.&nbsp;  
 
 The features of these objects may be extracted at each timepoint, these are referrred to here as nodes.  
 
