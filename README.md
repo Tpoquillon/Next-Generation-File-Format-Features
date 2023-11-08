@@ -12,8 +12,6 @@ Key objectives:
 
 * Community Engagement: Encourage collaboration and feedback from the wider scientific and bioimaging community to refine and improve these specifications continually.
 
-Related works:
-
 ## Multi-Object Feature Relationship Managment
 
 *Biological images frequently encompass various object types and sizes, 
