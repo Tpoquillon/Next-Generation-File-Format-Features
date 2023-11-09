@@ -1,0 +1,29 @@
+Name,Description,Formula,2D,3D,shapes,pixel mask,intensities,local,global,nyxus,pyradiomics,skimage,pyfeats
+total intensity,Integrated intensity of the region of interest (ROI),\sum _i^n g_i,,,,,,,,INTEGRATED_INTENSITY,,,
+mean ,Mean intensity value of the ROI,\mu = \frac{1}{n} \sum_i^n g_i,,,,,,,,MEAN,Mean,intensity_mean,mean
+median ,The median value of pixels in the ROI,,,,,,,,,MEDIAN,Median,,median
+mode,The mode of the intensity values,,,,,,,,,,,,mode
+min,Minimum intensity value in the ROI,\min(G),,,,,,,,MIN,Minimum,intensity_min,minimalGrayLevel
+max,Maximum intensity value in the ROI,\max(G),,,,,,,,MAX,Maximum,intensity_max,maximumGreyLevel
+range,Range between the maximmu and minimum,\max(G)-\min(G),,,,,,,,RANGE,range,,
+normalized range,intensity range of the ROI to intensity range of all the ROIs,"\frac {\max(G) - \min(G)} {\max(H) - \min(H)} | H=\{{G_0,...,G_k}\}",,,,,,,,COVERED_IMAGE_INTENSITY_RANGE,,,
+standard deviation,Standard deviation (unbiased),\sigma=\sqrt{ \frac{1}{n-1} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2 } ,,,,,,,,STANDARD_DEVIATION,Standard deviation,,
+standard deviation biased,Biased standard deviation,\sqrt{ \frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2 } ,,,,,,,,STANDARD_DEVIATION_BIASED,,,
+variance,Variance,\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2 ,,,,,,,,,variance,,variance
+coefficient of variation,Coefficient of variation,\frac{\sigma}{\mu} = \frac{ \sqrt{ \frac{1}{n-1} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2 }}{\frac{1}{n} \sum_i^n (g_i)},,,,,,,,COV ,,,CoefficientOfVariation
+standard error,Standard error,\frac{\sigma}{\sqrt{n}} = \frac{\sigma}{\sqrt{n}} = \frac{\sqrt{ \frac{1}{n-1} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2 } }{\sqrt{n}},,,,,,,,STANDARD_ERROR,,,
+skewness,skewness - the 3rd standardized moment,\frac{\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^3}{ \left(\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2\right)^{\frac{3}{2}}},,,,,,,,,skewness,,skewness
+skewness,alternativ estimator skewness  - the 3rd standardized moment,\frac{\sqrt{n}\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^3}{ \left(\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2\right)^{\frac{3}{2}}},,,,,,,,SKEWNESS,,,
+kurtosis,Kurtosis - the 4th standardized moment,\frac{\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^3}{ \left(\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2\right)^{\frac{3}{2}}},,,,,,,,,kurtosis,,kurtosis
+kurtosis,Kurtosis - the 4th standardized moment (Pearson formula),\frac{n\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^3}{ \left(\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2\right)^{\frac{3}{2}}},,,,,,,,KURTOSIS,,,
+excess kurtosis,"Excess kurtosis - the 4th standardized moment (Fisher-corrected formula, IBSI feature IPH6)",\frac{n\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^3}{ \left(\frac{1}{n} \sum_i^n \left ( g_i-\frac{1}{n} \sum_i^n (g_i) \right)^2\right)^{\frac{3}{2}}} -3,,,,,,,,EXCESS_KURTOSIS,,,
+energy,Energy,\sum _i^n g_i^2,,,,,,,,ENERGY,energy,,energy
+entropy,Entropy,-\sum_{i=0}^k (g_{i}\log_2(g_{i}+\epsilon)) | k=?,,,,,,,,,entropy,,
+entropy,Entropy,-\sum_{i=0}^k (g_{i}\ln(g_{i}+10^{-16})) | k=255,,,,,,,,,,,entropy
+entropy,Entropy,-\sum_{i=0}^k (g_{i}\ln(g_{i})) |k=1 + \log_2(n),,,,,,,,ENTROPY,,,
+1 percentile,1 Percentile,,,,,,,,,P01,,,
+10 percentile,10 Percentile,,,,,,,,,P10,10Percentile,,10Percentile
+25 percentile,25 Percentile,,,,,,,,,P25,,,25Percentile
+75 percentile,75 Percentile,,,,,,,,,P75,,,75Percentile
+90 percentile,90 Percentile,,,,,,,,,P90,90Percentile,,90Percentile
+99 percentile,99 Percentile,,,,,,,,,P99,,,
