@@ -1180,7 +1180,7 @@ Wiener index
 ```
 
 ## Other resources
-###Ontology
+### Ontology
 [EDAM-BIOIMAGING](https://bioportal.bioontology.org/ontologies/EDAM-BIOIMAGING/?p=classes&conceptid=root)
 
 General computer vision feature book :
